@@ -1,0 +1,1 @@
+start cmd.exe /k "cd C:\Users\AGuekdjian\Desktop\API rest CRUD with mongoDB && npm start"
