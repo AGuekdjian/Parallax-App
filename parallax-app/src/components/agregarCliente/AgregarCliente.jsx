@@ -1,75 +1,80 @@
-import React from 'react'
+import React from "react";
 import './AgregarCliente.css'
 
 const AgregarCliente = () => {
     return (
         <main className='addClient'>
-            <form>
-                <fieldset>
-                    <legend>Informacion del cliente</legend>
+            <form className='form'>
 
-                    <div>
-                    <input />
-                    <label>Cliente</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Nombre</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Categoria</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Fecha de inicio</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Familia</label>
-                </div>
-                </fieldset>
+                <div className='display'>
+                    <div className='form-container'>
+                        <h3>Informacion del cliente</h3>
 
-                <fieldset>
-                    <legend>Informacion sobre el servicio</legend>
-
-                    <div>
-                    <input />
-                    <label>Nombre de contrato</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Articulo</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Cantidad</label>
-                </div>
-                <div>
-                    <input type='number'/>
-                    <label>Precio</label>
-                </div>
-                <div>
-                    <input />
-                    <label>Descuento</label>
-                </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Tipo de moneda</legend>
-                    <div>
-                        <input type='radio' name='moneda' id='$'/>
-                        <label for="$">$</label>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Cliente</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Nombre</label>
+                        </div>
+                        <div className='input-box'>
+                            <input />
+                            <label htmlFor=''>Categoria</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Familia</label>
+                        </div>
+                        <div>
+                            <input type='date' />
+                            <label>Fecha de inicio</label>
+                        </div>
                     </div>
-                    <div>
-                        <input type='radio' name='moneda' id='USD'/>
-                        <label for="USD">USD</label>
-                    </div>
-                </fieldset>
 
-                <div>
-                    <textarea></textarea>
-                    <label>observaciones</label>
+                    <div className='form-container'>
+                        <h3>Informacion sobre el servicio</h3>
+
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Nombre de contrato</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Articulo</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Cantidad</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Precio</label>
+                        </div>
+                        <div className='input-box'>
+                            <input type='text' />
+                            <label htmlFor=''>Descuento</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='display'>
+                    <div className='form-container'>
+                        <h3>Tipo de moneda</h3>
+                        <div>
+                            <input type='radio' name='moneda' id='$' />
+                            <label for="$">$</label>
+                        </div>
+                        <div>
+                            <input type='radio' name='moneda' id='USD' />
+                            <label for="USD">USD</label>
+                        </div>
+                    </div>
+
+                    <div className='form-textarea'>
+                        <textarea></textarea>
+                        <label>observaciones</label>
+                    </div>
                 </div>
             </form>
         </main>
